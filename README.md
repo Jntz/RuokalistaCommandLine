@@ -16,4 +16,4 @@ Now it's only to finnish language
 
 ##Copyright and license
 
-Code and documentation copyright 2014 [Juotos](www.juotos.fi). Code released under the MIT license.
+Code and documentation copyright 2014 [Juotos](http://www.juotos.fi). Code released under the MIT license.
