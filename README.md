@@ -13,3 +13,7 @@ Now it's only to finnish language
 * Can add multiple recipe in same category and save to file
 * Can list recipes (organize to created or category field)
 * Can create menu (raffle menu items to use recipes list)
+
+##Copyright and license
+
+Code and documentation copyright 2014 [Juotos](www.juotos.fi). Code released under the MIT license.
