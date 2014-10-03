@@ -1,0 +1,186 @@
+<Kasvis>
+Pinaattikeitto
+Kesäkeitto
+Kukkavihannes-juustokeitto
+Juuresraastekeitto
+Ranskalainen sipuli-tomaattikeitto
+Porkkanakeitto
+Intialainen tomaattikeitto
+Sipulikeitto
+Pehmeä purjo-perunakeitto
+Kasvistortillat
+Täytetyt kvinoa-parsakaaliohukaiset
+Kasvispihvit keitetyn riisin kanssa
+Kesäkurpitsapaistos
+Tomaattisosekeitto
+Punajuuri-piparjuurikeitto
+Kesäkurpitsa-kasviskeitto
+Chilinen punajuurikeitto
+Kuorrutettu parsakaali ja riisi/perunat
+Uuniriisipuuro
+Hernekeitto
+Herne-kesäkurpitsakeitto ja piparjuurikerma
+Samettinen artisokkakeitto
+Kasvispaella
+Linssikeitto
+Sienikeitto
+Palsternakkasosekeitto
+Pinaatti-vuohenjuustokeitto
+Minestronekeitto
+Kukkakaali-parsakaalikeitto
+Juureskeitto
+Pehmeä palsternakkakeitto
+Yrttinen kukkakaalisosekeitto
+Valkosipulikeitto
+Kasvis-papukeitto ja pistoutahna
+Kartanon kukkakaalisosekeitto
+Pehmeä punajuurikeitto
+Pesto-pinaattilasagne
+Peruna-raejuustopaistos
+Omeletti
+Meksikolainen papupata
+Vihannes-kinkkugratiini
+Täytetyt paprikat
+Kukkakaali-kinkkugratiini
+Kukkakaali-pekonikeitto
+Sieni-palvikinkkurisotto
+
+<Pasta>
+Kasvis-makaronilaatikko
+Pinaatti-makaronilaatikko
+Kasvislasagne
+Kukkakaali-tomaattipasta
+Napolilainen tomaattikastike (tonnikala) pastan kanssa
+Meksikolainen lasagne
+Sinihomejuustoinen makaronilaatikko
+Pinaatti-fetamuhennos pastalle
+Pinaatti-sinihomejuustopasta
+Liha-makaronilaatikko
+Kinkku-makaronilaatikko
+Lasagne
+Spagettivuoka
+Broileri-pinaatti-taatelipasta
+Sieni-pestolasagne
+Pesto-tonnikalapasta
+Savulohipasta
+Erilainen (raejuusto) lasagne
+Pekoni-persikkapasta
+Feta-kesäkurpitsalasagne
+Tonnikalalasagne
+Pastaa, kikherneitä ja basilikakastiketta
+Pestolla maustettu tortellinikeitto
+Pikantti tonnikalaspagetti
+Sitruunainen kesäkurpitsapasta
+Pasta-kinkkulaatikko
+
+<Kala ja äyriäiset>
+Thai satay wok
+5 minuutin lohiwokki
+Kirjolohipalat ruiskuoressa
+Helpoista helpoin lohi-pastagratiini
+Helppo lohi-kukkakaalivuoka
+Kirjolohta ja papaijasalsaa
+Kuorrutettu kalavuoka ja perunat
+Jogurttiuunilohi
+Kukkiva kirjolohikeitto
+Lohi-tattikiusaus
+Uuniperunat ja katkaraputäyte
+Helppo lohi-pinaattikeitto
+Lohi-ruislasagne
+Savulohitäyte uuniperunalle
+Sinappinen katkarapu-kirjolohi
+Uunilohi ja mascarpone-pinaattikastike
+Lohi-perunalaatikko
+Ahvenlaatikko
+Kala-juurespata
+Nuudeli-katkarapukeitto
+Katkarapu-artisokkapasta
+Katkarapu-kasvisriisi
+Janssonin paprika-juustopasta
+Pinaattinen kirjolohi-perunasoselaatikko
+Koskenlaskija-uunikala
+Pikantti lohi-pastalaatikko
+Katkarapukasari
+Tuliset tonnikalapaprikat
+
+<Kana>
+Broileri-riisi-vihanneskeitto
+Broileria kermakastikkeessa
+Broileri-parsakaaliwokki
+Broileriminestronekeitto
+Juustoinen broileri-pasta-keitto
+Broileri-kaalilaatikko
+Broileri-papuburritot
+Hedelmäbroileri
+Broileririsotto
+Broileri-riisivuoka
+Appelsiiniglaseeratut broilerit ja uunikasvikset
+Broilerinfileet ja sitruunaiset uunijuurekset
+Intialainen broilericurry
+Nopea broilericurry
+Broileri-riisigratiini
+Broilerivokki
+
+<Liha- ja makkara>
+Kaalikeitto
+Texmex- jauhelihaperunat
+Meksikolaiset jauheliha-papuletut
+Bratwursti-enchilladat
+Nakkipannari
+Jauhelihaquesadillat
+Meksikolaiset kasvikset ja grillimakkarat
+Kesäinen pyttipannu
+Makkarapannu
+Kesäkurpitsaveneet jauhelihatäytteellä
+Omena-perunavuoka mustamakkaran kanssa
+Jauheliha-makaronipata
+Sienimuusi ja riistakäristys
+Valkosipuliporsas ja yrttinen punajuuri-perunalisäke
+Täytetyt ohukaiset
+Tuhti makkarakeitto
+Sipulinen makkarakeitto
+Meksikolainen jauhelihakeitto
+Makkara-makaronivuoka
+Helppo jauheliha-paprikakiusaus
+Kebabkiusaus
+Uuniperunat ja sinihomejuusto-kinkkutäyte
+Tulinen jauheliha-sienitäyte uuniperunoille
+Punajuuri-jauhelihalaatikko
+Fetajuustolla täytetyt jauhelihapihvit ja perunat
+Tomaattiset jauhelihapyörykät, maissisalsa ja perunat
+Lihapullat / jauhelihapihvit ja perunat/perunamuussi/kukkakaalisose
+Lihapullien toisenlainen mureketaikina ja perunat/perunamuussi/kukkakaalisose
+Currylihapullat ja perunat/perunamuussi 
+Moussaka
+Värikäs nakkispagetti
+Jauhelihakastike ja perunat/perunamuussi/kukkakaalisose
+Liha-perunasoselaatikko
+Nakki-perunasoselaatikko
+Kaali-jauhelihapata
+Lihamureke Italian tapaan sekä perunat
+Munakoiso-jauhelihavuoka
+Peruna-jauhelihalaatikko
+Chilinen makkara-omenapannu riisin/perunoiden kanssa
+Lihapullat tomaatti-yrttikastikkeessa ja perunat/pasta
+Kaaliwokki
+Possu-kaalilaatikko
+Pesto-jauhelihakeitto
+Jauheliha-papukeitto
+Omenainen makkaragratiini
+Värikäs kasvis-nakkipata
+Pizza
+Yrttijauhelihapihvit ja marinoidut uudet perunat
+Pekonimunakas
+Makkara-kasvispyttis
+Kasvis-makkaramunakas uunissa
+Välimeren lihapata
+Lihakasvis-ohratto
+Helppo kinkkuohratto
+Mausteinen makkarakeitto
+Gruusialainen kaalilaatikko
+Helppo jauheliha-savujuustokiusaus
+Texmex liha-perunasoselaatikko
+Lammasrulla & Dijon-kermaviilikastike
+Kaali-jauhelihapyttipannu
+Mummolan kaalikääryleet
+Juures-lihapata
