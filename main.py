@@ -11,6 +11,7 @@ options = {
 		'5': delete_modify_recipe.main,
 		'6': menu_log.main,
 		'7': create_lot_recipes.main
+		#, 'q': finished program
 }
 def menu():
 	print "%s" %(project_name.upper())
@@ -32,17 +33,23 @@ menu()
 while True:
 	try:
 		i = read_input("Mitä haluat tehdä?")
-		if i == 'q':	# Close the application
+		if i == 'q' or i =='exit':	# Close the application
 			print "Suljetaan ohjelma..."
 			break
-		else:
+		if i in options:
 			clear()
 			options[i]()	# Move to the page
 			clear()			
 			print "Takaisin valikkoon..."
 			menu()
+		else:
+			print "Annoit tuntemattoman komennon. Yritä uudelleen"
+
+	except KeyError:
+		print "Annoit tuntemattoman komennon. Yritä uudelleen"
 	except:
-		print "Virhe tapahtui. Todennäköisesti et käyttänyt sallittuja merkkejä liikkuessasi sovelluksen sisällä. ", sys.exc_info()
+		print sys.exc_info()
+		raise
 
 
 
