@@ -54,6 +54,7 @@ docs/_build/
 target/
 
 *.pyc
+*/*.pyc
 
 # Project stuff
 recipes.json
