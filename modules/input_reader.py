@@ -20,14 +20,16 @@ def read_int(output = "Anna kokonaisluku", empty_allowed = False):
 		while not x:
 			print output
 			try:
-				x = int(raw_input())
+				temp_x = raw_input()
+				x = int(temp_x)
 			except ValueError:
-				if(x == 'exit'): return x 
+				if(temp_x == 'exit'): return temp_x
 				print 'Et tainnut antaa kokonaislukua? Kokonaisluku on 1,2,3,4 jne.'
 	else:
 		try:
-			x = int(raw_input())
+			temp_x = raw_input()
+			x = int(temp_x)
 		except Exception:
-			if(x == 'exit'): return x 
+			if(temp_x == 'exit'): return temp_x
 			print 'Virhe tapahtui'
 	return x

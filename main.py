@@ -9,8 +9,7 @@ options = {
 		'3': create_recipe.main,
 		'4': print_recipes.main,
 		'5': delete_modify_recipe.main,
-		'6': menu_log.main,
-		'7': create_lot_recipes.main
+		'6': menu_log.main
 		#, 'q': finished program
 }
 def menu():
@@ -19,11 +18,10 @@ def menu():
 	print "VALIKKO"
 	print "1: Luo viikon ruokalista"
 	print "2: Näytä viikon ruokalista"
-	print "3: Luo resepti"
+	print "3: Luo resepti/Luo reseptejä"
 	print "4: Luettele reseptit"
 	print "5: Muokkaa/Poista resepti"
 	print "6: Luettele edellisten viikkojen ruokalistoja"
-	print "7: Luo monia reseptejä yhden kategorian alle"
 	print "q: Sulje sovellus"
 	print ""
 	print "Jatkaaksesi ohjelmassa kirjoita valitsemasi numero (tai sulkiessasi 'q') ja paina ENTER"
@@ -44,7 +42,10 @@ while True:
 			menu()
 		else:
 			print "Annoit tuntemattoman komennon. Yritä uudelleen"
-
+	except KeyboardInterrupt: #ctrl+c (force kill) error 
+		print ""
+		print "Sammutit sovelluksen väkivaltaisesti."
+		exit()
 	except KeyError:
 		print "Annoit tuntemattoman komennon. Yritä uudelleen"
 	except:
