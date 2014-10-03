@@ -4,6 +4,9 @@ from classes import *
 
 import re
 
+"""
+Just for reading recipes quick in txt file
+"""
 def save_to_file(recept):
 	old_data = get_recipes_data()
 	old_data["recipes"].append(recept.save_data_to_file())
@@ -28,4 +31,3 @@ for line in f:
 
 print "Kaikki reseptit luettiin onnistuneesti!"
 print "Yhteensä %s reseptiä luotiin kategorioineen" %(counter)
-

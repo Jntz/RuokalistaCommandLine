@@ -14,11 +14,5 @@ def main():
 		if name == 'exit':
 			return
 
-		recept = Recipe(name, category, "")
+		recept = Recipe(name, category)
 		save_to_file(recept)	
-	
-
-def save_to_file(recept):
-	old_data = get_recipes_data()
-	old_data["recipes"].append(recept.save_data_to_file())
-	write_json_to_file(old_data, filenames["recipes"])
