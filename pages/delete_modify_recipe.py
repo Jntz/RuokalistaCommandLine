@@ -46,8 +46,19 @@ def main():
 		return
 	elif case == '1':
 		modify_recipe(recipes, recipe, which_one)
+		while(True):
+			case = read_input("Haluatko jatkaa muokkaamista/poistamista? Kirjoita 'K'. Muutoin palataan takaisin", True)
+			if case == 'K':
+				main()
+			else: break
+
 	elif case == '2':
 		remove_recipe(recipes, recipe, which_one)
+		while(True):
+			case = read_input("Haluatko jatkaa muokkaamista/poistamista? Kirjoita 'K'. Muutoin palataan takaisin", True)
+			if case == 'K':
+				main()
+			else: break
 	else: 
 		clear()
 		main()
@@ -57,8 +68,7 @@ def remove_recipe(recipes, recipe, index):
 	if(read_input("Oletko varma? Kirjoita 'K' varmistaaksesi poiston.") == "K"):		
 		old_data["recipes"].pop(index) # pop out old recipe
 		write_json_to_file(old_data, filenames["recipes"])
-		read_input("Resepti poistettu onnistuneesti. Jatka takaisin aloitusvalikkoon painamalla ENTER", True)
-		return
+		print "Resepti poistettu onnistuneesti"
 	else:
 		print "Et halunnut sittenkään poistaa. Palataan takaisin edelliseen valintaan.."
 		main()
@@ -67,18 +77,15 @@ def modify_recipe(recipes, recipe, index):
 	old_data = {"recipes": recipes}
 	print "Haluat siis muokata reseptiä"
 	print "Kenttän sisältöä ei muokata jos painat vain ENTER"
-	name = read_input("Kirjoita uusi nimi:", True).capitalize()
-	category = read_input("Kirjoita uusi kategoria:", True).capitalize()
-	sub_categories = read_input("Kirjoita uudet alakategoriat:", True).capitalize()
-	if name == "" or name == recipe["name"] and category == "" or category == recipe["category"] and sub_categories == "" or sub_categories == recipe["sub_categories"]: 
+	name = read_input("Kirjoita uusi nimi:", True).capitalize().decode('utf-8')
+	category = read_input("Kirjoita uusi kategoria:", True).capitalize().decode('utf-8')
+
+	if name == "" or name == recipe["name"] and category == "" or category == recipe["category"]: 
 		print "Et muuttanut mitään."
-		read_input("Palaa takaisin päävalikkoon painamalla ENTER", True)
 		return
 	if name != "":
 		recipe["name"] = name
 	if category != "":
 		recipe["category"] = category
-	if sub_categories != "":
-		recipe["sub_categories"] = sub_categories 
 	old_data["recipes"][index] = recipe
 	write_json_to_file(old_data, filenames["recipes"])
