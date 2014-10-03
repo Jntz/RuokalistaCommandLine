@@ -3,9 +3,11 @@ RuokalistaCommandLine
 
 Raffle off menu in this week
 
-Copy project, open your terminal, cd to project directory and run python main.py. Required Python 2.
+Copy project, open your terminal, cd to project directory and run ```python main.py```. Required Python 2.
 
-Now it's only to finnish language
+Now it's only to finnish language.
+
+If you want to add recipes quickly check read_file.py file. Run program using the command: ```python read_file.py```.
 
 ##Features
 
