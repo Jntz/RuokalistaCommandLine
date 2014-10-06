@@ -25,7 +25,7 @@ def single_recipe():
 	if category == 'exit':
 		return
 	recept = Recipe(name, category)
-	save_to_file(recept)
+	save_recept_to_file(recept)
 	print "Talennus onnistui!"
 	print "Haluatko lisätä uuden reseptin?"
 	print "Kirjoita 'K', jos haluat tehdä uuden"
@@ -44,7 +44,7 @@ def multiple_recipe_with_same_category():
 			print "tyhjä"
 			return
 		recept = Recipe(name, category)
-		save_to_file(recept)
+		save_recept_to_file(recept)
 		print "Talennus onnistui! (pääset päävalikkoon kirjoittamalla 'exit')"
 
 def multiple_recipe_with_different_category():
@@ -56,5 +56,5 @@ def multiple_recipe_with_different_category():
 		if category == 'exit':
 			return
 		recept = Recipe(name, category)
-		save_to_file(recept)
+		save_recept_to_file(recept)
 		print "Talennus onnistui! (pääset päävalikkoon kirjoittamalla 'exit')"

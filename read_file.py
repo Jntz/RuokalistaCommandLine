@@ -41,7 +41,7 @@ for line in f:
 		category = l.strip('<>')			
 	else:
 		recept = Recipe(l, category)
-		save_to_file(recept)
+		save_recept_to_file(recept)
 		counter += 1
 
 print "Kaikki reseptit luettiin onnistuneesti!"
