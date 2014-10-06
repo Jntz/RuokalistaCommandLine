@@ -45,7 +45,7 @@ def multiple_recipe_with_same_category():
 			return
 		recept = Recipe(name, category)
 		save_recept_to_file(recept)
-		print "Talennus onnistui! (pääset päävalikkoon kirjoittamalla 'exit')"
+		press_to_continue("Talennus onnistui! (pääset päävalikkoon kirjoittamalla 'exit')")
 
 def multiple_recipe_with_different_category():
 	while True:
@@ -57,4 +57,4 @@ def multiple_recipe_with_different_category():
 			return
 		recept = Recipe(name, category)
 		save_recept_to_file(recept)
-		print "Talennus onnistui! (pääset päävalikkoon kirjoittamalla 'exit')"
+		press_to_continue("Talennus onnistui! (pääset päävalikkoon kirjoittamalla 'exit')")

@@ -22,7 +22,7 @@ def main():
 			list_sort_by_category(recipes)
 		else:
 			print "Yhtään reseptiä ei löytynyt"
-	read_input("Palaa takaisin valikkoon painamalla ENTER", True)	
+	press_to_continue("Palaa takaisin valikkoon painamalla ENTER")	
 
 def list_sort_by_created(recipes): 
 	print "Luetellaan luomisjärjestyksessä"
@@ -31,6 +31,7 @@ def list_sort_by_created(recipes):
 		print "%s. %s [%s]" %(i, recipe["name"].encode('utf-8'), recipe["category"].encode('utf-8'))
 		i += 1
 	print ""
+	
 def list_sort_by_category(recipes):
 	sortedRecipes = {}
 	for recipe in recipes:

@@ -33,3 +33,6 @@ def read_int(output = "Anna kokonaisluku", empty_allowed = False):
 			if(temp_x == 'exit'): return temp_x
 			print 'Virhe tapahtui'
 	return x
+
+def press_to_continue(output):
+	raw_input(output)

@@ -3,21 +3,25 @@ from modules import *
 import random, datetime
 
 def main(): 
+	current_week = str(datetime.date.today().isocalendar()[1])
+	if is_week_menu_created(current_week):
+		press_to_continue("Tämän viikon ruokalista on jo tehty. Paina ENTER palataksesi päävalikkoon")
+		return
+
 	recipes = get_recipes()
 	max_recipes = len(recipes)
 	how_many = read_int("Kuinka monta ruokaa tehdään tällä viikolla? (kirjoita exit jos haluat edelliseen valikkoon)")
 	if how_many == "exit": return
 
 	if how_many <= 0: 
-		read_int("Valitsit 0 tai vähemmän ruokaa, et siis halua tehdä ruoka listaa. Palaa päävalikkoon painamalla ENTER", True)
+		press_to_continue("Valitsit 0 tai vähemmän ruokaa, et siis halua tehdä ruoka listaa. Palaa päävalikkoon painamalla ENTER")
 		return
 	menu = []	
 	categories = []
 	previous_indexes = []
-	current_week = datetime.date.today().isocalendar()[1]
 
 	if len(recipes) <= 0:
-		read_int("Reseptejä ei ole, mahdoton tehdä ruokalistaa. Palaa päävalikkoon painamalla ENTER", True)
+		press_to_continue("Reseptejä ei ole, mahdoton tehdä ruokalistaa. Palaa päävalikkoon painamalla ENTER")
 		return
 	elif len(recipes) < how_many:
 		print("Haluat tehdä ruokia enemmän kuin ruokalistalla on vaihtoehtoja (emme arvo liian usein samaa ruokaa). Ei onnistu.")
@@ -39,4 +43,4 @@ def main():
 
 	save_menu_to_file(menu)
 
-	read_input("Paina jatkamalla ENTER", True)
+	press_to_continue("Paina jatkamalla ENTER")

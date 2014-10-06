@@ -15,7 +15,7 @@ def main():
 		print ""
 	else:
 		print "Reseptejä ei löytynyt"
-		read_input("Palaa takaisin päävalikkoon painamalla ENTER", True)
+		press_to_continue("Palaa takaisin päävalikkoon painamalla ENTER")
 		return
 
 	while(True):
