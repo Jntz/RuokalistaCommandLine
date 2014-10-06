@@ -17,5 +17,7 @@ def get_menus():
 	return data["menus"]
 
 def get_menu(index): #get recipe with spesific index
-	pass
-	#return get_menus()[index]
+	return get_menus()[index]
+
+def is_week_menu_created(week):
+	return week in get_menus()	# True/False
