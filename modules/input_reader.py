@@ -17,7 +17,7 @@ def read_input(output = "Kirjoita jotain", empty_allowed = False):
 def read_int(output = "Anna kokonaisluku", empty_allowed = False):
 	x = None
 	if not empty_allowed:
-		while not x:
+		while x is None:
 			print output
 			try:
 				temp_x = raw_input()
@@ -27,7 +27,7 @@ def read_int(output = "Anna kokonaisluku", empty_allowed = False):
 				print 'Et tainnut antaa kokonaislukua? Kokonaisluku on 1,2,3,4 jne.'
 	else:
 		try:
-			temp_x = raw_input()
+			temp_x = raw_input(output + ' ')
 			x = int(temp_x)
 		except Exception:
 			if(temp_x == 'exit'): return temp_x
