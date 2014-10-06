@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-from recipe_item import *
 
 class Recipe:
 	""" Init
