@@ -22,9 +22,9 @@ def menu():
 	print "4: Luettele reseptit"
 	print "5: Muokkaa/Poista resepti"
 	print "6: Luettele edellisten viikkojen ruokalistoja"
-	print "q: Sulje sovellus"
+	print "q: Sulje sovellus (tai kirjoittamalla exit)"
 	print ""
-	print "Jatkaaksesi ohjelmassa kirjoita valitsemasi numero (tai sulkiessasi 'q') ja paina ENTER"
+	print "Jatkaaksesi ohjelmassa kirjoita valitsemasi numero (tai sulkiessasi 'q'/ 'exit') ja paina ENTER"
 
 clear()
 menu()
