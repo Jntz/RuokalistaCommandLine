@@ -24,7 +24,6 @@ def main():
 	elif value == 2:
 		print "MENULISTA:"
 		menus = get_menus()
-		i = 0
 		for i in range(len(menus)):
 			week = current_week - i
 			if week <= 0: week = 52
