@@ -10,7 +10,6 @@ def save_recept_to_file(recept):
 
 def save_menu_to_file(menu):
 	current_week = datetime.date.today().isocalendar()[1]
-	print current_week
 	old_data = get_menus_data()
 	old_data["menus"][current_week] = menu
 	write_json_to_file(old_data, filenames["menus"])

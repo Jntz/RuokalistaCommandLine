@@ -8,7 +8,9 @@ def main():
 		press_to_continue("Tämän viikon ruokalista on jo tehty. Paina ENTER palataksesi päävalikkoon")
 		return
 
-	recipes = get_recipes()
+	category_counts = get_recipe_category_count() #recept categories count 
+	menus = get_menus()
+	recipes = get_recipes_for_menu(menus, current_week)
 	max_recipes = len(recipes)
 	how_many = read_int("Kuinka monta ruokaa tehdään tällä viikolla? (kirjoita exit jos haluat edelliseen valikkoon)")
 	if how_many == "exit": return
@@ -25,6 +27,10 @@ def main():
 		return
 	elif len(recipes) < how_many:
 		print("Haluat tehdä ruokia enemmän kuin ruokalistalla on vaihtoehtoja (emme arvo liian usein samaa ruokaa). Ei onnistu.")
+		main()
+		return
+	elif category_counts < how_many:
+		print("Haluat ruokia viikossa enemmän kuin ruokalistalla on kategorioita (emme arvo liian usein samaa ruokaa). Ei onnistu")
 		main()
 		return
 
