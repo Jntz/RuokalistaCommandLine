@@ -1,16 +1,15 @@
 # -*- coding: utf-8 -*-
 from modules import *
-import random, datetime
+import random
 
 def main(): 
-	current_week = str(datetime.date.today().isocalendar()[1])
-	if is_week_menu_created(current_week):
+	if is_week_menu_created():
 		press_to_continue("Tämän viikon ruokalista on jo tehty. Paina ENTER palataksesi päävalikkoon")
 		return
 
 	category_counts = get_recipe_category_count() #recept categories count 
 	menus = get_menus()
-	recipes = get_recipes_for_menu(menus, current_week)
+	recipes = get_recipes_for_menu(menus)
 	max_recipes = len(recipes)
 	how_many = read_int("Kuinka monta ruokaa tehdään tällä viikolla? (kirjoita exit jos haluat edelliseen valikkoon)")
 	if how_many == "exit": return

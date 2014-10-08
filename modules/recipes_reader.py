@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from json_reader import *
 from config import *
+from helpers import *
 
 def get_recipes_data():
 	old_data = read_json_from_file(filenames["recipes"])
@@ -12,7 +13,7 @@ def get_recipes_data():
 		# add new row: recipes
 		old_data["recipes"] = []
 	return old_data
-	
+
 def get_recipes(): 
 	data = get_recipes_data()
 	return data["recipes"]
@@ -20,12 +21,11 @@ def get_recipes():
 def get_recipe(index): # get recipe with spesific index
 	return get_recipes()[index]
 
-def get_recipes_for_menu(menus, current_week): # get recipe that allowed add to menu
-	int_current_week = int(current_week)
+def get_recipes_for_menu(menus): # get recipe that allowed add to menu
 	not_allowed = []
 	i = 1
 	while i <= reuse_weeks: # default reuse_weeks: 4
-		week = int_current_week - i # example: 51 - 1, 51 - 2, 51 - 3, 51 - 4
+		week = current_week - i # example: 51 - 1, 51 - 2, 51 - 3, 51 - 4
 		if week <= 0: # week number 0 is not allowed => 2, 1, 52, 51,...
 			week = 52
 		week = str(week)

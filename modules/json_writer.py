@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
-import io, json, recipes_reader, datetime
+import io, json, recipes_reader
 from recipes_reader import *
 from menus_reader import *
+from helpers import *
 
 def save_recept_to_file(recept):
 	old_data = get_recipes_data()
@@ -9,9 +10,8 @@ def save_recept_to_file(recept):
 	write_json_to_file(old_data, filenames["recipes"])
 
 def save_menu_to_file(menu):
-	current_week = datetime.date.today().isocalendar()[1]
 	old_data = get_menus_data()
-	old_data["menus"][current_week] = menu
+	old_data["menus"][current_week_str] = menu
 	write_json_to_file(old_data, filenames["menus"])
 
 def write_json_to_file(json_content, filename):

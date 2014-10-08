@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from json_reader import *
 from config import *
+from helpers import *
 
 def get_menus_data():
 	old_data = read_json_from_file(filenames["menus"])
@@ -19,5 +20,5 @@ def get_menus():
 def get_menu(index): #get recipe with spesific index
 	return get_menus()[index]
 
-def is_week_menu_created(week):
-	return week in get_menus()	# True/False
+def is_week_menu_created():
+	return current_week_str in get_menus()	# True/False
