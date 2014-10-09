@@ -67,7 +67,7 @@ def remove_recipe(recipes, recipe, index):
 	old_data = {"recipes": recipes}
 	if(read_input("Oletko varma? Kirjoita 'K' varmistaaksesi poiston.") == "K"):		
 		old_data["recipes"].pop(index) # pop out old recipe
-		write_json_to_file(old_data, filenames["recipes"])
+		write_json_to_file(old_data, "data.json")
 		print "Resepti poistettu onnistuneesti"
 	else:
 		print "Et halunnut sittenkään poistaa. Palataan takaisin edelliseen valintaan.."
@@ -88,4 +88,4 @@ def modify_recipe(recipes, recipe, index):
 	if category != "":
 		recipe["category"] = category
 	old_data["recipes"][index] = recipe
-	write_json_to_file(old_data, filenames["recipes"])
+	write_json_to_file(old_data, "data.json")

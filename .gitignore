@@ -57,5 +57,4 @@ target/
 */*.pyc
 
 # Project stuff
-recipes.json
-menus.json
+*.json

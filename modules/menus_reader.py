@@ -4,7 +4,7 @@ from config import *
 from helpers import *
 
 def get_menus_data():
-	old_data = read_json_from_file(filenames["menus"])
+	old_data = read_json_from_file("data.json")
 	if old_data == None or type(old_data) is not dict: # rewrite old_data and create new recipe dictionary
 		# initialize new dict
 		old_data = {}
